@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ColoredListCtrl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/ColoredListCtrl.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ColoredListCtrl.pdb" /debug /machine:I386 /out:"Debug/ColoredListCtrl.exe" /pdbtype:sept 
+".\Debug\color.obj"
+".\Debug\ColoredListCtrl.obj"
+".\Debug\ColoredListCtrlDlg.obj"
+".\Debug\ColorListCtrl.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ColoredListCtrl.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp"
+<h3>Output Window</h3>
+Compiling...
+ColoredListCtrlDlg.cpp
+G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp(122) : error C2059: syntax error : '&&'
+G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp(122) : error C2143: syntax error : missing ';' before '}'
+G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp(122) : error C2143: syntax error : missing ';' before '}'
+G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp(123) : error C2143: syntax error : missing ';' before '{'
+G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp(123) : error C2447: missing function header (old-style formal list?)
+G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp(123) : error C2143: syntax error : missing ';' before '}'
+G:\编程\ColoredListCtrl\ColoredListCtrlDlg.cpp(182) : warning C4390: ';' : empty controlled statement found; is this the intent?
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+ColoredListCtrl.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

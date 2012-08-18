@@ -1,0 +1,244 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\ColoredListCtrl.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standardkomponenten\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ColoredListCtrl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Info über ColoredListCtrl"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ColoredListCtrl, Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1901",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_COLOREDLISTCTRL_DIALOG DIALOGEX 0, 0, 292, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ColoredListCtrl"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | WS_BORDER | 
+                    WS_TABSTOP,5,5,280,90
+    PUSHBUTTON      "set",IDC_BUTTON_Set,215,165,70,14
+    EDITTEXT        IDC_EDIT_ItemSubPos,25,135,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ItemPos,25,120,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TextCol,110,135,100,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BackGnd,110,120,100,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Item",IDC_STATIC,5,123,14,8
+    LTEXT           "Sub",IDC_STATIC,5,138,14,8
+    LTEXT           "BackGND",IDC_STATIC,75,123,34,8
+    LTEXT           "TextCol",IDC_STATIC,75,137,25,8
+    EDITTEXT        IDC_EDIT_ItemDelInsPos,40,200,40,14,ES_AUTOHSCROLL
+    LTEXT           "Item",IDC_STATIC,20,201,14,8
+    EDITTEXT        IDC_EDIT_ItemText,135,200,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SubText1,185,200,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SubText2,235,200,50,14,ES_AUTOHSCROLL
+    LTEXT           "Text:",IDC_STATIC,115,202,17,8
+    PUSHBUTTON      "insert",IDC_BUTTON_insert,115,219,170,14
+    PUSHBUTTON      "delete",IDC_BUTTON_delete,20,219,60,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,5,190,280,1
+    CONTROL         "normal",IDC_RADIO_BITS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,25,170,37,10
+    CONTROL         "select",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,65,170,
+                    35,10
+    CONTROL         "focus",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,102,170,
+                    33,10
+    EDITTEXT        IDC_EDIT_ItemStatePos,165,165,40,14,ES_AUTOHSCROLL
+    LTEXT           "Item",IDC_STATIC,148,168,14,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,5,155,280,1
+    PUSHBUTTON      "color + text",IDC_BUTTON_ColorSet,215,137,70,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,100,190,1,45
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,5,110,280,1
+    EDITTEXT        IDC_EDIT_ItemColoredText,235,120,50,14,ES_AUTOHSCROLL
+    LTEXT           "Text:",IDC_STATIC,215,123,17,8
+    CONTROL         "big dotted Focus",IDC_CHECK_DotFocus,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,95,69,10
+    CONTROL         "with rect",IDC_CHECK_WithRect,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,95,43,10
+    CONTROL         "vert. lines",IDC_CHECK_VertLines,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,95,46,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ColoredListCtrl MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ColoredListCtrl\0"
+            VALUE "LegalCopyright", "Copyright (C) 1901\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ColoredListCtrl.EXE\0"
+            VALUE "ProductName", "ColoredListCtrl Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COLOREDLISTCTRL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Inf&o über ColoredListCtrl..."
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif
+#include "res\ColoredListCtrl.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "l.deu\afxres.rc"          // Standardkomponenten
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
