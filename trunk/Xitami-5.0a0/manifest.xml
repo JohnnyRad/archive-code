@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<package name = "Xitami" release = "5.0a0">
+  <product name = "foreign" url = "https://svn.imatix.com/imatix/foreign/trunk" revision = "11949" release = "1.2b0" />
+  <product name = "base2" url = "https://svn.imatix.com/imatix/base2/trunk" revision = "11949" release = "2.3" />
+</package>
